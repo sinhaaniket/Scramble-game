@@ -4,7 +4,7 @@ const btn = document.querySelector('.btn')
 let play = false;
 let newWords = "";
 let randomWords = "";
-let tWords = ["Aniket", "Aditya", "Chaitanya", "Ashutosh", "Jankee", "Rahul", "Talha", "Shobh", "Vishal"]
+let tWords = ["Aniket", "Aditya", "Chaitanya", "Ashutosh", "Rahul", "Talha", "Shobh", "Vishal"]
 let sWords = [
     "Aardvark",
     "Albatross",
