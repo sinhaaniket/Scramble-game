@@ -156,6 +156,7 @@ btn.addEventListener('click', function(){
         else{
             console.log('incorrect')
             msg.innerHTML = `Sorry Dude!, It is incorrect. Please try again ${randomWords}`
+            guess.value = ""
         }
     }
 })
