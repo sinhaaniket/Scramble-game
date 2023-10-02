@@ -1,6 +1,7 @@
 const msg = document.querySelector('.msg')
 const guess = document.querySelector('input')
 const btn = document.querySelector('.btn')
+const inp = document.querySelector('.inp')
 let play = false;
 let newWords = "";
 let randomWords = "";
@@ -132,9 +133,7 @@ const createNewWords = () => {
 
         return arr;
  }
-
-
-btn.addEventListener('click', function(){
+const game = () => {
     if(!play){
         play = true;
         btn.innerHTML= 'Guess';
@@ -159,4 +158,12 @@ btn.addEventListener('click', function(){
             guess.value = ""
         }
     }
-})
+}
+
+btn.addEventListener('click', game() )
+inp.addEventListener("keydown", function(event) {
+    // Check if the key pressed is Enter (key code 13)
+    if (event.keyCode === 13) {
+      game();
+    }
+  })
